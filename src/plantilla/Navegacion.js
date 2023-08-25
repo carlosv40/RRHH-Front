@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navegacion() {
   return (
     <div className="container">
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
-            Navbar
+            Sistema de Recursos Humanos
           </a>
           <button
             className="navbar-toggler"
@@ -25,6 +26,11 @@ export default function Navegacion() {
                 <a className="nav-link active" aria-current="page" href="/">
                   Inicio
                 </a>
+              </li>
+              <li>
+              <Link className="nav-link" aria-current="page" to="/agregar">
+                  Agregar empleado
+                </Link>
               </li>
             </ul>
           </div>
