@@ -34,7 +34,7 @@ export default function AgregarEmpleados() {
         <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
                 <label htmlFor="nombre" className="form-label">Nombre</label>
-                <input type="text" className="form-control" id="nombre" isRequired={true} value={nombre}
+                <input type="text" className="form-control" id="nombre" value={nombre}
                 onChange={(e) => cambio(e)}/>
             </div>
             <div className="mb-3">
